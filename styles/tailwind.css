@@ -1,0 +1,15 @@
+/* src/styles/tailwind.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Clases personalizadas adicionales */
+.bg-gradient-to-br-from-primary-to-secondary {
+  background: linear-gradient(to bottom right, theme('colors.primary'), theme('colors.secondary'));
+}
+
+.text-neon {
+  color: theme('colors.secondary');
+  text-shadow: 0 0 10px theme('colors.secondary'), 0 0 20px theme('colors.secondary');
+}

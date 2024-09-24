@@ -1,0 +1,64 @@
+/* src/styles/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos Globales */
+
+body {
+  @apply bg-primary text-white font-sans;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-secondary font-serif;
+  margin-bottom: 1rem;
+}
+
+p {
+  @apply mb-4;
+}
+
+a {
+  @apply text-secondary hover:text-white transition duration-300;
+  text-decoration: none;
+}
+
+button {
+  @apply bg-secondary text-primary font-bold py-2 px-4 rounded-full hover:bg-primary hover:text-secondary transition duration-300 ease-in-out;
+}
+
+.container {
+  @apply max-w-screen-lg mx-auto px-4;
+}
+
+/* Clases Personalizadas */
+.glow-text {
+  @apply text-secondary font-bold text-xl;
+  text-shadow: 0 0 5px rgba(246, 209, 0, 0.8), 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+.hero-section {
+  @apply flex items-center justify-center h-screen bg-hero-pattern bg-cover bg-center text-white;
+}
+
+.card {
+  @apply bg-white text-primary shadow-lg rounded-lg overflow-hidden transition-transform duration-500 transform hover:-translate-y-2 hover:shadow-2xl;
+}
+
+.card-header {
+  @apply bg-primary text-white p-4;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-40;
+}
+
+.modal-content {
+  @apply bg-white text-primary p-6 rounded-lg shadow-lg w-1/3;
+}
